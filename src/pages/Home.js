@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Projects } from "../components/Projects"
 
 function Home(props) {
   // create state to hold home
@@ -24,6 +25,7 @@ function Home(props) {
         <h1>{element.name}</h1>
         <p>{element.bio}</p>
         <h4>{element.email}</h4>
+        <Projects />
       </div>
     ));
   };

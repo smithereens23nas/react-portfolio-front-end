@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-function Projects(props) {
+export default function Projects(props) {
   // create state to hold projects
   const [projects, setProjects] = useState(null);
 
@@ -35,5 +35,3 @@ function Projects(props) {
 
   return projects ? loaded() : <h1>Loading...</h1>;
 }
-
-export default Projects;
